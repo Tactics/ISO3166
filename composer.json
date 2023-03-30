@@ -1,6 +1,5 @@
 {
-    "name": "tactics/foo",
-    "description": "foo",
+    "name": "tactics/iso3166",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -21,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Tactics\\Foo\\": "src"
+            "Tactics\\ISO3166\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tactics\\Foo\\": "tests",
-            "Tactics\\Foo\\Benchmarks\\": "benchmarks"
+            "Tactics\\ISO3166\\": "tests",
+            "Tactics\\ISO3166\\Benchmarks\\": "benchmarks"
         }
     },
     "scripts": {
