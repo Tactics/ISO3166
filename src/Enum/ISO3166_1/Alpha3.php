@@ -1,10 +1,12 @@
-<?php /** @noinspection SpellCheckingInspection */
+<?php
+
+/** @noinspection SpellCheckingInspection */
 
 namespace Tactics\ISO3166\Enum\ISO3166_1;
 
 use Tactics\ISO3166\CountryCode;
 
-enum Alpha3 : string implements CountryCode
+enum Alpha3: string implements CountryCode
 {
     case AFGHANISTAN = 'AFG';
     case AALAND_ISLANDS = 'ALA';
@@ -259,7 +261,7 @@ enum Alpha3 : string implements CountryCode
 
     public function asAlpha2(): Alpha2
     {
-        return match($this) {
+        return match ($this) {
             self::AFGHANISTAN => Alpha2::AFGHANISTAN,
             self::AALAND_ISLANDS => Alpha2::AALAND_ISLANDS,
             self::ALBANIA => Alpha2::ALBANIA,
@@ -519,7 +521,7 @@ enum Alpha3 : string implements CountryCode
 
     public function asNumeric(): Numeric
     {
-        return match($this) {
+        return match ($this) {
             self::AFGHANISTAN => Numeric::AFGHANISTAN,
             self::AALAND_ISLANDS => Numeric::AALAND_ISLANDS,
             self::ALBANIA => Numeric::ALBANIA,
